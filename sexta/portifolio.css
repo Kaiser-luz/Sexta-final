@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body {
+    background-color: #1d1f2f;
+    color: white;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.apresentacao__texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.texto-destaque {
+    font-family: 'Krona One', sans-serif;
+    color: #a50044; 
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.imagem {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    height: auto;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+strong {
+    color: #004d98; 
+    border: 4px solid #004d98;
+    padding: 4px;
+    transition: 0.3s ease-in-out;
+}
+.texto-destaque span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.texto-destaque strong {
+    display: inline-block;
+    margin-top: 10px;
+}
+.texto-destaque {
+    text-align: center;
+}
+.apresentacao__texto p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+body {
+    background-color: #0a0a2a;
+}
+
+span {
+    color: #a50044; 
+    border: 4px solid #a50044;
+    padding: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.linkedin {
+    background-color: #004d98;
+}
+
+.github {
+    background-color: #004d98;
+}
+
+.instagram {
+    background-color: #6d0035;
+}
+.curriculo{
+    background-color: #6d0035;
+}
+.form {
+    background-color: #004d98;
+}
+
+.btn:hover, .btn:focus {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.botoes-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .apresentacao__texto {
+        width: 100%;
+    }
+
+    .imagem {
+        max-width: 80%;
+    }
+
+    .botoes-container {
+        justify-content: center;
+    }
+}

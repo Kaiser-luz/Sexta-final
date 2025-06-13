@@ -1,0 +1,116 @@
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
+    background: linear-gradient(135deg, #004D98, #A50044); /* Gradiente com as cores do Barcelona */
+    color: #ffffff; /* Texto branco para contraste */
+    font-family: Arial, sans-serif; /* Fonte mais moderna */
+    display: flex; /* Centraliza o conteúdo */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 40px; /* Espaçamento entre os elementos */
+    justify-content: center; /* Centraliza os itens */
+    align-items: flex-start; /* Alinha os itens no topo */
+    padding: 30px; /* Espaçamento interno maior */
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    border-radius: 20px; /* Bordas mais arredondadas para suavizar o visual */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra mais forte e uniforme */
+    width: 90%; /* Ajusta a largura para caber na tela */
+    max-width: 1200px; /* Limita a largura máxima */
+}
+
+form {
+    width: 45%; /* Ajustei a largura para melhor proporção */
+    padding: 30px; /* Padding espaçoso */
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    border-radius: 20px; /* Bordas mais arredondadas para suavizar o visual */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra mais forte e uniforme */
+    color: #004D98; /* Texto azul escuro para contraste */
+}
+
+.summary {
+    width: 45%; /* Ajustei a largura para melhor proporção */
+    padding: 30px;
+    background: #FDB927; /* Fundo amarelo para destaque */
+    border-radius: 20px; /* Bordas mais arredondadas para suavizar o visual */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra mais forte e uniforme */
+    color: #004D98; /* Texto azul escuro para contraste */
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px; /* Espaçamento maior entre os campos */
+    padding: 12px; /* Padding maior para conforto visual */
+    border: 2px solid #A50044; /* Bordas vermelhas mais definidas */
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra interna mais visível */
+    background: #ffffff; /* Fundo branco para contraste */
+    color: #004D98; /* Texto azul escuro */
+}
+
+button {
+    background: #004D98; /* Azul escuro */
+    color: #FDB927; /* Texto amarelo */
+    padding: 15px 25px; /* Padding maior para destaque */
+    border: none;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-weight: bold; /* Texto em negrito para destaque */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+}
+
+#editButton, #portfolioButton {
+    background-color: #004D98;
+    color: #FDB927;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#editButton:hover, #portfolioButton:hover {
+    background-color: #A50044;
+    transform: scale(1.05);
+}
+
+input, textarea, button {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Leve aumento no hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+}
+
+fieldset {
+    border: none; /* Remove a borda padrão do fieldset */
+    margin-bottom: 20px; /* Espaçamento entre os grupos de campos */
+    padding: 0; /* Remove o padding interno */
+}
+
+legend {
+    font-size: 1.0rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #004D98; /* Azul escuro para contraste */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilhar os elementos no mobile */
+        gap: 20px; /* Reduzir o espaçamento */
+    }
+
+    form, .summary {
+        width: 100%; /* Ocupa toda a largura no mobile */
+    }
+}

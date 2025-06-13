@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contato para envio de informações pessoais e motivo do contato.">
+    <meta name="keywords" content="formulário, contato, informações pessoais, motivo">
+    <meta name="author" content="Seu Nome">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <form id="contactForm" aria-labelledby="formTitle">
+            <h2 id="formTitle">Contato Profissional</h2>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="phone">Número:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Motivo do Contato</legend>
+                <label for="reason">Motivo:</label>
+                <textarea id="reason" name="reason" required></textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+
+        <div class="summary" aria-labelledby="summaryTitle">
+            <h2 id="summaryTitle">Resumo</h2>
+            <p>Os dados preenchidos no formulário aparecerão aqui.</p>
+            <ul id="summaryList"></ul>
+            <button id="editButton" type="button">Editar</button>
+            <button id="portfolioButton" type="button">Ir para o Portfólio</button>
+        </div>
+    </div>
+
+   
+    <script src="scripts.jsx"></script>
+</body>
+</html>
