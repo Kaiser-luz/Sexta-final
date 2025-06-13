@@ -8,14 +8,11 @@ document.getElementById("editButton").addEventListener("click", toggleEditMode);
 // Funções principais
 function handleFormSubmit(event) {
     event.preventDefault();
-
     const formData = getFormData();
-
     if (!validateEmail(formData.email)) {
         alert("Por favor, insira um e-mail válido.");
         return;
     }
-
     updateSummary(formData);
     alert("Formulário enviado com sucesso!");
 }
@@ -38,8 +35,6 @@ function validateEmail(email) {
 function updateSummary(data) {
     const summaryList = document.getElementById("summaryList");
     summaryList.innerHTML = "";
-
-    // Tradução das chaves para português
     const fieldTranslations = {
         name: "Nome",
         email: "Email",
@@ -47,7 +42,6 @@ function updateSummary(data) {
         phone: "Número",
         reason: "Motivo",
     };
-
     Object.keys(data).forEach((key) => {
         const listItem = document.createElement("li");
         listItem.innerHTML = `<strong>${fieldTranslations[key]}:</strong> <span contenteditable="false">${data[key]}</span>`;
@@ -58,15 +52,11 @@ function updateSummary(data) {
 function toggleEditMode() {
     const summaryList = document.getElementById("summaryList");
     const editButton = document.getElementById("editButton");
-
     const isEditing = editButton.textContent === "Salvar";
-
     summaryList.querySelectorAll("span").forEach((span) => {
-        span.contentEditable = !isEditing; // Alterna entre editável e não editável
+        span.contentEditable = !isEditing;
     });
-
-    editButton.textContent = isEditing ? "Editar" : "Salvar"; // Alterna o texto do botão
-
+    editButton.textContent = isEditing ? "Editar" : "Salvar";
     if (isEditing) {
         saveEditedData();
     }
@@ -75,21 +65,18 @@ function toggleEditMode() {
 function saveEditedData() {
     const summaryList = document.getElementById("summaryList");
     const updatedData = {};
-
     summaryList.querySelectorAll("li").forEach((listItem) => {
         const key = listItem.querySelector("strong").textContent.replace(":", "").toLowerCase();
         const value = listItem.querySelector("span").textContent;
         updatedData[key] = value;
     });
-
-    console.log("Dados atualizados:", updatedData); // Exibe os dados atualizados no console
+    console.log("Dados atualizados:", updatedData);
 }
 
-// Funções auxiliares
 function highlightInvalidField(fieldId) {
     const field = document.getElementById(fieldId);
-    field.style.borderColor = "red"; // Destaca o campo com borda vermelha
-    field.focus(); // Foca no campo inválido
+    field.style.borderColor = "red";
+    field.focus();
 }
 
 function capitalize(str) {

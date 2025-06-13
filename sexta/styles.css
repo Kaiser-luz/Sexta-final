@@ -1,67 +1,67 @@
 body {
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove padding padrão */
-    height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
-    background: linear-gradient(135deg, #004D98, #A50044); /* Gradiente com as cores do Barcelona */
-    color: #ffffff; /* Texto branco para contraste */
-    font-family: Arial, sans-serif; /* Fonte mais moderna */
-    display: flex; /* Centraliza o conteúdo */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #004D98, #A50044);
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
     display: flex;
-    gap: 40px; /* Espaçamento entre os elementos */
-    justify-content: center; /* Centraliza os itens */
-    align-items: flex-start; /* Alinha os itens no topo */
-    padding: 30px; /* Espaçamento interno maior */
-    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
-    border-radius: 20px; /* Bordas mais arredondadas para suavizar o visual */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra mais forte e uniforme */
-    width: 90%; /* Ajusta a largura para caber na tela */
-    max-width: 1200px; /* Limita a largura máxima */
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 1200px;
 }
 
 form {
-    width: 45%; /* Ajustei a largura para melhor proporção */
-    padding: 30px; /* Padding espaçoso */
-    background: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
-    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
-    border-radius: 20px; /* Bordas mais arredondadas para suavizar o visual */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra mais forte e uniforme */
-    color: #004D98; /* Texto azul escuro para contraste */
+    width: 45%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    color: #004D98;
 }
 
 .summary {
-    width: 45%; /* Ajustei a largura para melhor proporção */
+    width: 45%;
     padding: 30px;
-    background: #FDB927; /* Fundo amarelo para destaque */
-    border-radius: 20px; /* Bordas mais arredondadas para suavizar o visual */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra mais forte e uniforme */
-    color: #004D98; /* Texto azul escuro para contraste */
+    background: #FDB927;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    color: #004D98;
 }
 
 input, textarea {
     width: 100%;
-    margin-bottom: 20px; /* Espaçamento maior entre os campos */
-    padding: 12px; /* Padding maior para conforto visual */
-    border: 2px solid #A50044; /* Bordas vermelhas mais definidas */
-    border-radius: 8px; /* Bordas mais arredondadas */
-    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1); /* Sombra interna mais visível */
-    background: #ffffff; /* Fundo branco para contraste */
-    color: #004D98; /* Texto azul escuro */
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid #A50044;
+    border-radius: 8px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    color: #004D98;
 }
 
 button {
-    background: #004D98; /* Azul escuro */
-    color: #FDB927; /* Texto amarelo */
-    padding: 15px 25px; /* Padding maior para destaque */
+    background: #004D98;
+    color: #FDB927;
+    padding: 15px 25px;
     border: none;
-    border-radius: 8px; /* Bordas mais arredondadas */
+    border-radius: 8px;
     cursor: pointer;
-    font-weight: bold; /* Texto em negrito para destaque */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #editButton, #portfolioButton {
@@ -72,7 +72,6 @@ button {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #editButton:hover, #portfolioButton:hover {
@@ -85,32 +84,31 @@ input, textarea, button {
 }
 
 button:hover {
-    transform: scale(1.1); /* Leve aumento no hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 fieldset {
-    border: none; /* Remove a borda padrão do fieldset */
-    margin-bottom: 20px; /* Espaçamento entre os grupos de campos */
-    padding: 0; /* Remove o padding interno */
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 legend {
-    font-size: 1.0rem; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
-    color: #004D98; /* Azul escuro para contraste */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
-    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #004D98;
+    margin-bottom: 10px;
+    text-align: left;
 }
-
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Empilhar os elementos no mobile */
-        gap: 20px; /* Reduzir o espaçamento */
+        flex-direction: column;
+        gap: 20px;
     }
 
     form, .summary {
-        width: 100%; /* Ocupa toda a largura no mobile */
+        width: 100%;
     }
 }

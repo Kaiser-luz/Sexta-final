@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-body {
-    background-color: #1d1f2f;
-    color: white;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 60vh;
+}
+
+body {
+    background-color: #0a0a2a;
+    color: white;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
 }
 
 #principal {
@@ -38,6 +41,22 @@ body {
     font-size: 18px;
     margin-top: 10px;
     line-height: 1.6;
+    text-align: center;
+}
+
+.texto-destaque span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.texto-destaque strong {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.apresentacao__texto p {
+    margin-bottom: 12px;
+    line-height: 1.6;
 }
 
 .imagem {
@@ -57,25 +76,6 @@ strong {
     padding: 4px;
     transition: 0.3s ease-in-out;
 }
-.texto-destaque span {
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.texto-destaque strong {
-    display: inline-block;
-    margin-top: 10px;
-}
-.texto-destaque {
-    text-align: center;
-}
-.apresentacao__texto p {
-    margin-bottom: 12px;
-    line-height: 1.6;
-}
-body {
-    background-color: #0a0a2a;
-}
 
 span {
     color: #a50044; 
@@ -84,6 +84,7 @@ span {
     transition: 0.3s ease-in-out;
 }
 
+/* Botões */
 .btn {
     display: inline-block;
     padding: 12px 20px;
@@ -97,29 +98,24 @@ span {
     cursor: pointer;
 }
 
-.linkedin {
-    background-color: #004d98;
-}
-
-.github {
-    background-color: #004d98;
-}
-
-.instagram {
-    background-color: #6d0035;
-}
-.curriculo{
-    background-color: #6d0035;
-}
+.linkedin,
+.github,
 .form {
     background-color: #004d98;
 }
 
-.btn:hover, .btn:focus {
+.instagram,
+.curriculo {
+    background-color: #6d0035;
+}
+
+.btn:hover,
+.btn:focus {
     opacity: 0.8;
     transform: scale(1.05);
 }
 
+/* Container dos botões */
 .botoes-container {
     display: flex;
     gap: 10px;
@@ -128,6 +124,7 @@ span {
     margin-top: 16px;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
     .apresentacao {
         flex-direction: column-reverse;
